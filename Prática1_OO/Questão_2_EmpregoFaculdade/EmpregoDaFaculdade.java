@@ -4,15 +4,36 @@ public class EmpregoDaFaculdade {
     private String nome;
     private double salario;
     private int horasAula;
-    double getGastos(){
-       return horasAula*40; 
+
+    
+    public EmpregoDaFaculdade(String nome, double salario, int horasAula) {
+        this.nome = nome;
+        this.salario = salario;
+        this.horasAula = horasAula;
     }
+
+    double getGastos() {
+        return salario+(horasAula*40);
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
     String getInfo(){
-        return "nome:” + this.nome + " com salário “ + this.salario;
+        return "nome: "+ this.nome + "Salário = " + this.getGastos(); 
     }
     
+    public static void main(String[] args) {
+        EmpregoDaFaculdade empregoDaFaculdade = new EmpregoDaFaculdade("Joazin da POO", 5000.00, 15);
+
+        System.out.println(empregoDaFaculdade.getInfo());
+
+        
+    }
     
 }
+
 
 /*a) Alterar o método getGastos() para somar um bônus de R$ 40 reais por hora/aula.
 b) Alterar o método getInfo () para retornar atualizado o valor que o professor irá

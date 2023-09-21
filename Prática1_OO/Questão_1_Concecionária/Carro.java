@@ -18,7 +18,7 @@ public class Carro {
     }
     public int codCarro(){
         System.out.println("Retorna o codigo do produto com base no seu valor e modelo");
+        return 1;
     }
-    return 1;
     
 }
