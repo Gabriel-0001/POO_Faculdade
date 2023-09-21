@@ -16,7 +16,6 @@ public class Funcionario {
         return proventos;
     }
 
-    @Override
     public String toString() {
         return "Funcionario matricula = " + matricula + ", nome = " + nome + ", salario R$" + salario;
     }
