@@ -9,8 +9,9 @@ public class VIP extends Ingresso{
     }
 
     public void imprimeVIP(){
+        System.out.println("Ingresso VIP. Valor normal: "+getValorIngresso());
         setValorIngresso(valorAdicional+getValorIngresso());
-        System.out.println("Ingresso VIP. Valor: "+getValorIngresso());
+        System.out.println("Valor com o adcional: R$"+getValorIngresso());
     }
 
     

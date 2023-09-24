@@ -11,9 +11,11 @@ public class Camarote extends Ingresso{
     }
 
     public void imprimeCamarote (){
+        System.out.println("Ingresso Camorote. Valor do ingresso normal R$ "+getValorIngresso());
         setValorIngresso(valorAdicional+getValorIngresso());
-        System.out.println("Ingresso Camorote. Valor do ingresso: "+getValorIngresso()
-        +"\n Localizacao do camarote: "+localizacaoCamarote);
+        System.out.println("Valor com o adiconal R$"+ getValorIngresso()
+                +"\n Localizacao do camarote: "+localizacaoCamarote);
+
     }
     
 }
